@@ -1,0 +1,113 @@
+{
+  "uid" : "efb12b779fe3ef5d",
+  "name" : "test_sub[int]",
+  "fullName" : "test_calc.TestCalc#test_sub",
+  "historyId" : "3a087d2fbb54ccefdcf229004bceee2f",
+  "time" : {
+    "start" : 1608121000324,
+    "stop" : 1608121000325,
+    "duration" : 1
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 9 == 10\n  +9\n  -10",
+  "statusTrace" : "self = <test_calc.TestCalc object at 0x1062d1c50>, a = 10, b = 1, expect = 9, myfixture = None\n\n    @pytest.mark.run(order=3)   # 用例排序\n    @pytest.mark.flaky(retuns=3, reruns_delay=2)    # 失败后重新运行\n    @pytest.mark.parametrize('a,b,expect', get_datas()[1], ids=get_datas()[4])  # 数据驱动\n    def test_sub(self, a, b, expect, myfixture):\n>       assert expect == a - b + 1\nE       assert 9 == 10\nE         +9\nE         -10\n\ntest_calc.py:35: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "myfixture",
+    "time" : {
+      "start" : 1608120998262,
+      "stop" : 1608120998262,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "myfixture::0",
+    "time" : {
+      "start" : 1608121004378,
+      "stop" : 1608121004378,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "run(order=3)"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(retuns=3, reruns_delay=2)"
+  }, {
+    "name" : "suite",
+    "value" : "test_calc"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalc"
+  }, {
+    "name" : "host",
+    "value" : "bogon"
+  }, {
+    "name" : "thread",
+    "value" : "92175-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_calc"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "a",
+    "value" : "10"
+  }, {
+    "name" : "b",
+    "value" : "1"
+  }, {
+    "name" : "expect",
+    "value" : "9"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "ba0b6a16b6d822b5",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 9 == 10\n  +9\n  -10",
+      "time" : {
+        "start" : 1608120998263,
+        "stop" : 1608120998263,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "run(order=3)", "flaky(retuns=3, reruns_delay=2)" ]
+  },
+  "source" : "efb12b779fe3ef5d.json",
+  "parameterValues" : [ "10", "1", "9" ]
+}

@@ -1,0 +1,60 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 9 == 10\n  +9\n  -10",
+      "children" : [ {
+        "name" : "test_sub[int]",
+        "uid" : "efb12b779fe3ef5d",
+        "parentUid" : "01347ea5da0bf4c3309122a9de805117",
+        "status" : "failed",
+        "time" : {
+          "start" : 1608121000324,
+          "stop" : 1608121000325,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "10", "1", "9" ]
+      } ],
+      "uid" : "01347ea5da0bf4c3309122a9de805117"
+    }, {
+      "name" : "AssertionError: assert 2 == 3\n  +2\n  -3",
+      "children" : [ {
+        "name" : "test_sub[minus]",
+        "uid" : "ac970e4cf7dc0190",
+        "parentUid" : "755b0a31e2bda026956aa705b1a37b59",
+        "status" : "failed",
+        "time" : {
+          "start" : 1608121002342,
+          "stop" : 1608121002343,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0", "-2", "2" ]
+      } ],
+      "uid" : "755b0a31e2bda026956aa705b1a37b59"
+    }, {
+      "name" : "AssertionError: assert 0 == 1\n  +0\n  -1",
+      "children" : [ {
+        "name" : "test_sub[bigint]",
+        "uid" : "f87582663c7df915",
+        "parentUid" : "c34a9c14936f5a3031b3b6c742398ec0",
+        "status" : "failed",
+        "time" : {
+          "start" : 1608121004361,
+          "stop" : 1608121004362,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "-1", "-1", "0" ]
+      } ],
+      "uid" : "c34a9c14936f5a3031b3b6c742398ec0"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}
